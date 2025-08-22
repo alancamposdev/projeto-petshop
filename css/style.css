@@ -1,9 +1,65 @@
 /*====== Estilização do projeto ======*/
 
+/* VARIÁVEIS  */
+:root {
+  /* cores do projeto */
+  --primary-color: #3c184e;
+  --secondary-color: #fff;
+  --shadow-color-1: #1f26875e;
+  --shadow-color-2: #0000005c;
+  --shadow-color-3: #ffffffc4;
+
+ /* fonte do projeto  */
+  --main-font: 'Poppins', sans-serif;
+
+}
+
+
 /* RESET BASICO */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-} 
+  
+}
 
+/* GLOBAL */
+html,body{
+  font-family: var(--main-font);
+  line-height: 1.6;
+  color: var(--primary-color); /*cor do texto padrão*/
+}
+
+a {
+  text-decoration: none;
+  background-color: transparent;
+  color: var(--secondary-color);
+}
+
+/* BANNER  */
+#banner {
+  background-image: url('../assets/images/banner-topo.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+}
+
+.banner-content {
+  background-color: #ffffff80;
+  width: 100%;
+  height: 500px; 
+  box-shadow: 0 8px 32px var(--shadow-color-1);
+  text-align: center;
+  padding: 20px;
+}
+.banner-content p {
+  font-size: 2.5rem;
+  font-weight: 900;
+  margin-bottom: 20px;
+}
+.banner-content a {
+  
+}
